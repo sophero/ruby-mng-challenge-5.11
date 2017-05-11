@@ -16,5 +16,13 @@ def even_array_select(num_array)
 	end
 end
 
+# Chris' soln for Fixnums
+def even_array_ruby(num_array)
+	num_array.select! do |num|
+		num.even?
+	end
+end
+
 p even_array([0, 0.1, 2, 3, 81, 17, 16.0])
 p even_array_select([0, 0.1, 2, 3, 81, 17, 16.0])
+p even_array_ruby([0, -4, 2, 3, 81, 17, 16])

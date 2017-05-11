@@ -11,7 +11,7 @@ end
 
 # Chris' soln
 def even_array_select(num_array)
-	num_array = num_array.select do |num|
+	num_array.select! do |num|
 		num % 2 == 0
 	end
 end
